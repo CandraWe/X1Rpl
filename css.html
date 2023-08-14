@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        h1,h2{
+            color:cyan;
+        }
+        .warnatext{
+            color: blue;
+        }
+        #judul{
+            color:red;
+        }
+        .biru{
+            color:green !important; /* important akan lebih di prioritaskan meskipun ada class lain*/
+        }
+        .biru{
+            color:pink;
+        }
+        
+        
+    </style>
+    
+    <!-- Senin, 14 Agustus 2023 -->
+
+    <h1>Gatau bingung pengen beli truk</h1>
+    <h2>Auah</h2>
+    <h3 class="warnatext" id="judul">Ini h3</h3> </body> <!-- css mendahulukan css yang langsung di tag nya/style baru id kemudian "class" -->
+    <h4 class="biru">bododdddodoo</h4> <!-- css membaca nya dari atas jadi jika ada yang sama maka yang bagian awalnya tertimpa bagian bawah -->
+
+</body>
+</html>
