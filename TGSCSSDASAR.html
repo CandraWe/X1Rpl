@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerita Singkat</title>
+</head>
+<body>
+    <style>
+        /* css Tugas 1 */
+        .cerita{
+            color:darkblue;
+            font-family: Arial;
+            font-weight: bold;
+        }
+
+        /* css Tugas 2 */
+
+        a[target="_blank"]{
+        background-color: yellow;
+       }
+        .highlight{
+            color:red;
+        }
+        #judul-utama{
+            text-shadow: 2px 1px gray;
+        }
+        .kotak-teks{
+            font-family: Verdana;
+        }
+
+        /* css Tugas 3 */
+        .menu a{
+            color:green
+        }
+        .judul{
+            color:blue;
+            font-weight: bold;
+        }
+        .perhatian{
+            background-color: yellow;
+            color: red;
+        }
+
+    </style>
+    
+    <!-- Senin 21 Agustus 2023 -->
+    
+    <!-- Tugas 1 -->
+    <!-- 
+        Kamu sedang membuat halaman web untuk menampilkan cerita pendek. Kamu ingin memformat teks cerita agar terlihat menarik dan mudah dibaca. Berikut adalah cerita singkat yang ingin kamu tampilkan:
+
+"Cerita dari negeri yang jauh, ada seekor kelinci bernama Kiko. Ia sangat gemar berjalan-jalan menyusuri padang rumput."
+        Tugas:
+
+1. Ganti warna teks cerita menjadi biru tua.
+2. Jadikan teks cerita menjadi tebal.
+3. Gunakan jenis font "Arial" untuk teks cerita.
+     -->
+
+     <p style="font-weight: bold; text-align: center;">TUGAS 1</p>
+
+    <div class="cerita">
+        <p>Cerita dari negeri yang jauh, ada seekor kelinci bernama Kiko. Ia sangat gemar berjalan-jalan menyusuri padang rumput.</p>
+    </div>
+
+    <!-- Tugas ke 2 -->
+   <!-- 
+    Kamu ingin memformat beberapa elemen khusus dalam halaman web kamu.
+    Berikut adalah tugas yang harus kamu selesaikan:
+
+Pilih semua tautan (elemen `<a>`) yang memiliki atribut `target="_blank"`, dan berikan mereka latar belakang kuning.
+
+Pilih semua elemen dengan kelas "highlight", dan berikan teks mereka warna merah.
+
+Pilih semua elemen dengan ID "judul-utama", dan berikan teks mereka efek bayangan dengan warna abu-abu.
+
+Pilih semua elemen paragraf yang berada dalam elemen dengan kelas "kotak-teks", dan berikan teks mereka jenis font "Verdana".
+
+Tugas:
+
+1. Buatlah HTML sederhana dengan elemen-elemen yang sesuai dengan deskripsi di atas.
+2. Buatlah CSS untuk mengatur gaya elemen-elemen tersebut berdasarkan spesifikasi di atas.
+    -->
+    <p style="font-weight: bold; text-align: center; ">TUGAS 2</p>
+
+    <a href="#" target="_blank">Tautan Baru</a>
+    <a href="#">Tautan Biasa</a>
+
+    <p class="highlight">Teks yang Diarsipkan</p>
+    <p>Teks Normal</p>
+
+    <p id="judul-utama">Ini adalah Judul Utama</p>
+
+    <div class="kotak-teks">
+        <p>Teks dalam Kotak Teks</p>
+    </div>
+
+    <!-- Tugas 3 -->
+    <!-- 
+        Kamu sedang merancang tampilan untuk halaman profil. Kamu memiliki beberapa elemen yang ingin kamu gaya dengan kombinasi selektor.
+        Berikut adalah tugas yang harus kamu selesaikan:
+
+Semua tautan dalam elemen dengan kelas "menu" harus berwarna hijau.
+
+Teks dalam elemen dengan kelas "judul" yang berada di dalam elemen dengan ID "header" harus menjadi tebal dan berwarna biru.
+
+Elemen dengan kelas "perhatian" yang berada di dalam elemen dengan ID "konten" harus memiliki latar belakang kuning dan teks berwarna merah.
+        Tugas:
+
+1. Buatlah HTML sederhana dengan elemen-elemen yang sesuai dengan deskripsi di atas.
+2. Buatlah CSS untuk mengatur gaya elemen-elemen tersebut berdasarkan spesifikasi di atas.
+     -->
+     <p style="font-weight: bold; text-align: center;">TUGAS 3</p>
+
+     <div class="menu">
+        <a href="#">Beranda</a>
+        <a href="#">Profil</a>
+        <a href="#" target="_blank">Kontak</a>
+    </div>
+
+    <div id="header">
+        <h1 class="judul">Halaman Profil</h1>
+    </div>
+
+    <div id="konten">
+        <p class="perhatian">Perhatikan Informasi Berikut</p>
+    </div>
+
+</body>
+</html>
