@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Tugas PBO -->
+    <!-- Senin 11 September 2023 -->
+
+    <script>
+        // Membuat Class dan Objek
+        class mahasiswa {
+            #Nama = "John Doe" 
+            #NIM =12345
+
+            info(){
+                return this.#Nama + "<br>" + this.#NIM;
+            }
+        }
+
+        var mahasiswa1 = new mahasiswa();
+        // document.write(mahasiswa1.info()); //no1
+        console.log(mahasiswa1.info()); // Access modifier pakai #
+        
+        class pegawai{
+            Nama;
+            Nidn;
+
+            infoo(){}
+        }
+        class dosen extends pegawai{
+            Nama = "Dr.Jane Dae";
+            Nidn = 67890;
+            Jmlh_Mahasiswa = 2174; //no4
+            infoo(){
+                // return this.Nama + "<br>" + this.Nidn; //no3
+                return "Nama = " + this.Nama + "<br>" + "Nidn = " + this.Nidn + "<br>" + "Jumlah Mahasiswa = " + this.Jmlh_Mahasiswa; //no4
+            }
+        }
+
+        var dosen1 = new dosen()
+        document.write(dosen1.infoo());
+        
+    </script>
+
+</body>
+</html>
