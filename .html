@@ -10,19 +10,21 @@
             font-family: arial;
 
         }
-        .header{
+        header{
             padding: 10px;
             background-color: black;
             color: white;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
+            font-size: 20px;
         }
         button{
+            font-size: 25px;
             color: white;
+            border-radius: 5px;
         }
         #button1{
             border:solid 1px white;
-            border-radius: 5px;
             background-color: black;
         }
         #button2{
@@ -34,7 +36,7 @@
         a:hover{
             color: blue;
         }
-        .isi{
+        #isi{
             padding-top: 30px;
             background-color: #dadbf1;
             width: 100%;
@@ -53,6 +55,23 @@
             width: 500px;
             height: 50px;
         }
+        .ISI{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .kotak{
+            background-color: red;
+            width: 400px;
+            height: 250px;
+            margin: 30px;
+        }
+        .logo{
+            background-size: cover;
+            width: 70px;
+            /* margin: auto; */
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
@@ -60,7 +79,7 @@
     <!-- Sabtu 30 September 2023 -->
 
     <div class="layout">
-        <div class="header">
+        <header>
             <div>
                 <a href="#"> Abstract</a>
                 <a href="#"> Help Center</a>
@@ -70,9 +89,9 @@
                 <button id="button1"> Submit a request</button>
                 <button id="button2"> Sign in</button>
             </div>
-        </div>
+        </header>
 
-        <div class="isi">
+        <div id="isi">
             <h1>How can we help?</h1>
         </div>
 
@@ -81,6 +100,74 @@
                 <input type="text" placeholder="Search">
             </div>
         </main>
+
+        <div class="ISI">
+
+            <div class="kotak">
+                <div>
+                    <img  class="logo" src="https://theme.zdassets.com/theme_assets/2197739/aed6500f4da41c641f3de5d96247eb6654e9c386.png" alt="">
+                </div>
+                <div id="text">
+                    <h3>Branches</h3>
+                    <p>Abstract Branches lets you manage,version, and document your designs in one place.</p>
+                </div>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div class="kotak">
+                <div class="logo">
+
+                </div>
+                <div id="text">
+                    <h3>Manage your account</h3>
+                    <p></p>
+                </div>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div class="kotak">
+                <div class="logo">
+
+                </div>
+                <div id="text">
+                    <h3>Manage organizations, teams, and projects </h3>
+                    <p></p>
+                </div>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div class="kotak">
+                <div class="logo">
+
+                </div>
+                <div id="text">
+                    <h3>Manage billing</h3>
+                    <p></p>
+                </div>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="kotak">
+                <div class="logo">
+
+                </div>
+                <div id="text">
+                    <h3>Authenticate to Abstract</h3>
+                    <p></p>
+                </div>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="kotak">
+                <div class="logo">
+
+                </div>
+                <div id="text">
+                    <h3>Abstract support</h3>
+                    <p></p>
+                </div>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
         
     </div>
 
