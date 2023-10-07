@@ -30,10 +30,12 @@
         #button2{
             background-color: blue;
         }
-        a{
+        .tombol{
+            text-decoration: none;
             color: white;
         }
-        a:hover{
+        .tombol:hover{
+            text-decoration: underline;
             color: blue;
         }
         #isi{
@@ -61,16 +63,40 @@
             justify-content: center;
         }
         .kotak{
-            background-color: red;
-            width: 400px;
+            /* background-color: red; */
+            width: 420px;
             height: 250px;
             margin: 30px;
         }
-        .logo{
-            background-size: cover;
-            width: 70px;
+        img{
+            float: left;
+            width: 80px;
             /* margin: auto; */
             padding: 10px;
+        }
+        #text{
+            margin-left: 150px;
+        }
+        footer{
+            background-color: black;
+            width: 100%;
+            height: 300px;
+            padding: 25px;
+            display: flex;
+        }
+        .coloring{
+            color: white;
+            margin-left: 40px;
+        }
+
+        .coloring a{
+            text-decoration: none;
+            color: white;
+        }
+        .coloring1{
+            color: white;
+            margin-left: 250px;
+            margin-top: 200px;
         }
     </style>
 </head>
@@ -81,8 +107,8 @@
     <div class="layout">
         <header>
             <div>
-                <a href="#"> Abstract</a>
-                <a href="#"> Help Center</a>
+                <a class="tombol" href="#"> Abstract</a>
+                <a class="tombol" href="#"> Help Center</a>
             </div>
 
             <div class="button">
@@ -104,71 +130,112 @@
         <div class="ISI">
 
             <div class="kotak">
-                <div>
-                    <img  class="logo" src="https://theme.zdassets.com/theme_assets/2197739/aed6500f4da41c641f3de5d96247eb6654e9c386.png" alt="">
+                <div class="logo1">
+                    <img src="https://theme.zdassets.com/theme_assets/2197739/aed6500f4da41c641f3de5d96247eb6654e9c386.png" alt="">
                 </div>
                 <div id="text">
                     <h3>Branches</h3>
-                    <p>Abstract Branches lets you manage,version, and document your designs in one place.</p>
+                    <p>Abstract Branches lets you manage, version, and document your designs in one place.</p>
+                    <a href="#">Learn more</a>
                 </div>
-                <a href="#">Learn more</a>
             </div>
 
             <div class="kotak">
-                <div class="logo">
-
+                <div class="logo2">
+                    <img src="https://theme.zdassets.com/theme_assets/2197739/91588b3d042df901d9b941ccbb57af4f151401c7.png" alt="">
                 </div>
                 <div id="text">
                     <h3>Manage your account</h3>
-                    <p></p>
+                    <p>Configure your account settings, such as your email, profile details, and password.</p>
+                    <a href="#">Learn more</a>
                 </div>
-                <a href="#">Learn more</a>
             </div>
 
             <div class="kotak">
-                <div class="logo">
-
+                <div class="logo3">
+                    <img src="https://theme.zdassets.com/theme_assets/2197739/50d0db451c0e1e66e1caddd142986fcf6792ca05.png" alt="">
                 </div>
                 <div id="text">
                     <h3>Manage organizations, teams, and projects </h3>
-                    <p></p>
+                    <p>Use Abstract organizations, teams, and projects to organize your people and your work.</p>
+                    <a href="#">Learn more </a>
                 </div>
-                <a href="#">Learn more</a>
             </div>
 
             <div class="kotak">
-                <div class="logo">
-
+                <div class="logo4">
+                    <img src="https://theme.zdassets.com/theme_assets/2197739/3e82d0126e97d7b7c60a611d4e11b3c278d33743.png" alt="">
                 </div>
                 <div id="text">
                     <h3>Manage billing</h3>
-                    <p></p>
+                    <p>Change subscriptions and payment details.</p>
+                    <a href="#">Learn more</a>
                 </div>
-                <a href="#">Learn more</a>
             </div>
             <div class="kotak">
-                <div class="logo">
-
+                <div class="logo5">
+                    <img src="https://theme.zdassets.com/theme_assets/2197739/7712592465ef5c7bf18f1c7cb16e19ab44eb81e3.png" alt="">
                 </div>
                 <div id="text">
                     <h3>Authenticate to Abstract</h3>
-                    <p></p>
+                    <p>Set up and configure SSO, SCIM, and Just-in-Time provisioning.</p>
+                    <a href="#">Learn more</a>
                 </div>
-                <a href="#">Learn more</a>
             </div>
             <div class="kotak">
-                <div class="logo">
-
+                <div class="logo6">
+                    <img src="https://theme.zdassets.com/theme_assets/2197739/dcc25d18e224d12621d74e545cc8bdd1b5685ca8.png" alt="">
                 </div>
                 <div id="text">
                     <h3>Abstract support</h3>
-                    <p></p>
+                    <p>Get in touch with a human.</p>
+                    <a href="#">Learn more</a>
                 </div>
-                <a href="#">Learn more</a>
             </div>
 
+            <footer>
+                <div class="coloring">
+                    <h1>Abstrak</h1>
+                    <a href="">Start Trial</a> <br>
+                    <a href="">Pricing</a><br>
+                    <a href="">Download</a>
+                </div>
+                <div class="coloring">
+                    <h1>Resources</h1>
+                    <a href="">Blog</a> <br>
+                    <a href="">Help Center</a><br>
+                    <a href="">Release Notes</a> <br>
+                    <a href="">Status</a> <br>
+                </div>
+                <div class="coloring">
+                    <h1>Community</h1>
+                    <a href="">Twiter</a> <br>
+                    <a href="">Linkendln</a><br>
+                    <a href="">Facebook</a> <br>
+                    <a href="">Dribbble</a> <br>
+                    <a href="">Podcast</a> <br>
+                </div>
+                <div class="coloring">
+                    <h1>Company</h1>
+                    <a href="">About us</a> <br>
+                    <a href="">Careers</a><br>
+                    <a href="">Legal</a> <br>
+                    
+                    <br>
+                    <p>Contact us</p>
+                    <p>info@abstrak.com</p>
+                </div>
+                <div class="coloring1">
+                    <P>
+                    © Copyright 2023<br>
+                    Abstract Studio Design, Inc.<br>
+                    All rights reserved
+                    </P>
+                </div>
+            </footer>
         </div>
         
+
     </div>
 
 </body>
