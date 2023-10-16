@@ -17,6 +17,11 @@
             display: flex;
             justify-content: space-between;
             font-size: 20px;
+            align-items: center;
+        }
+        .button{
+            display: flex;
+            align-items: center;
         }
         button{
             font-size: 25px;
@@ -68,7 +73,7 @@
             height: 250px;
             margin: 30px;
         }
-        img{
+        .Logointinya{
             float: left;
             width: 80px;
             /* margin: auto; */
@@ -98,6 +103,40 @@
             margin-left: 250px;
             margin-top: 200px;
         }
+        
+        /* 09|10|2023  */
+        /* untuk ukuran hp */
+        /* @media(max-width:500px){
+            button{
+                display: none;
+            }
+        } */
+        @media(max-width:500px){
+            h1{
+                display: none;
+            }
+        }
+        @media(max-width:500px){
+            input{
+                width: auto;
+            }
+        }
+        @media(max-width:800px){
+            .gambar{
+                display: none;
+            }
+        }
+        @media(max-width:600px){
+            .gambar{
+                display: block;
+            }
+            button{
+                display: none;
+            }
+        }
+        .gambar{
+            width: 50px;
+        }
     </style>
 </head>
 <body>
@@ -114,6 +153,7 @@
             <div class="button">
                 <button id="button1"> Submit a request</button>
                 <button id="button2"> Sign in</button>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqmJbZjsWoGz2uyB2qOKDFEQkcnE6uWp9Y-w&usqp=CAU" alt="" width="80px" class="gambar">
             </div>
         </header>
 
@@ -131,7 +171,7 @@
 
             <div class="kotak">
                 <div class="logo1">
-                    <img src="https://theme.zdassets.com/theme_assets/2197739/aed6500f4da41c641f3de5d96247eb6654e9c386.png" alt="">
+                    <img src="https://theme.zdassets.com/theme_assets/2197739/aed6500f4da41c641f3de5d96247eb6654e9c386.png" alt="" class="Logointinya">
                 </div>
                 <div id="text">
                     <h3>Branches</h3>
@@ -142,7 +182,7 @@
 
             <div class="kotak">
                 <div class="logo2">
-                    <img src="https://theme.zdassets.com/theme_assets/2197739/91588b3d042df901d9b941ccbb57af4f151401c7.png" alt="">
+                    <img src="https://theme.zdassets.com/theme_assets/2197739/91588b3d042df901d9b941ccbb57af4f151401c7.png" alt="" class="Logointinya">
                 </div>
                 <div id="text">
                     <h3>Manage your account</h3>
@@ -153,7 +193,7 @@
 
             <div class="kotak">
                 <div class="logo3">
-                    <img src="https://theme.zdassets.com/theme_assets/2197739/50d0db451c0e1e66e1caddd142986fcf6792ca05.png" alt="">
+                    <img src="https://theme.zdassets.com/theme_assets/2197739/50d0db451c0e1e66e1caddd142986fcf6792ca05.png" alt="" class="Logointinya">
                 </div>
                 <div id="text">
                     <h3>Manage organizations, teams, and projects </h3>
@@ -164,7 +204,7 @@
 
             <div class="kotak">
                 <div class="logo4">
-                    <img src="https://theme.zdassets.com/theme_assets/2197739/3e82d0126e97d7b7c60a611d4e11b3c278d33743.png" alt="">
+                    <img src="https://theme.zdassets.com/theme_assets/2197739/3e82d0126e97d7b7c60a611d4e11b3c278d33743.png" alt="" class="Logointinya">
                 </div>
                 <div id="text">
                     <h3>Manage billing</h3>
@@ -174,7 +214,7 @@
             </div>
             <div class="kotak">
                 <div class="logo5">
-                    <img src="https://theme.zdassets.com/theme_assets/2197739/7712592465ef5c7bf18f1c7cb16e19ab44eb81e3.png" alt="">
+                    <img src="https://theme.zdassets.com/theme_assets/2197739/7712592465ef5c7bf18f1c7cb16e19ab44eb81e3.png" alt="" class="Logointinya">
                 </div>
                 <div id="text">
                     <h3>Authenticate to Abstract</h3>
@@ -184,7 +224,7 @@
             </div>
             <div class="kotak">
                 <div class="logo6">
-                    <img src="https://theme.zdassets.com/theme_assets/2197739/dcc25d18e224d12621d74e545cc8bdd1b5685ca8.png" alt="">
+                    <img src="https://theme.zdassets.com/theme_assets/2197739/dcc25d18e224d12621d74e545cc8bdd1b5685ca8.png" alt="" class="Logointinya">
                 </div>
                 <div id="text">
                     <h3>Abstract support</h3>
