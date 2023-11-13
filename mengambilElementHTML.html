@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Template for DOM Exercise</title>
+</head>
+<body>
+
+    <!-- Senin, 13 November 2023 -->
+
+    <header>
+        <h1 id="judul">Judul Halaman</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Tentang Kami</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="content">
+        <article>
+            <h2>Artikel Pertama</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+        </article>
+        <article>
+            <h2>Artikel Kedua</h2>
+            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Hak Cipta. Dibuat dengan <span class="heart">&hearts;</span> di Dunia Web.</p>
+    </footer>
+
+    <script>
+
+        // dapatkan ELEMEN HTML
+        // ID = judul
+        // tag = h1
+
+        // kalau innerText = tag tidak akn dibaca
+        // document.getElementById("judul").innerText = "<u>Halaman Beranda</u>";
+        // kalau innerHTML = akan membaca tag
+        document.getElementById("judul").innerHTML = "<u>Halaman Beranda</u>";
+
+        console.log(document.getElementsByTagName("h1"));
+
+        document.getElementsByTagName("h1")[0].innerText ="Judul itu pake array"
+
+        document.getElementsByTagName("li")[0].innerText ="RUBAH"
+        // document.getElementsByTagName("li")[0].innerHTML ="<u>RUBAH</u>" 
+        // merubah style
+        document.getElementsByTagName("li")[0].style.color ="red"
+        document.getElementsByTagName("li")[0].style.backgroundColor ="cyan"
+
+        document.getElementsByTagName("li")[1].innerText ="UBAH"
+        document.getElementsByTagName("li")[1].style.color ="yellow"
+        document.getElementsByTagName("li")[1].style.backgroundColor ="cyan"
+
+        document.getElementsByTagName("li")[2].innerText ="BAH"
+        document.getElementsByTagName("li")[2].style.color ="green"
+        document.getElementsByTagName("li")[2].style.backgroundColor ="cyan"
+
+
+        console.log(document.getElementsByTagName("li").length); //length untuk mencari jumlah data
+
+        // perulangan
+        var jumlahElement = document.getElementsByTagName("li").length;
+            for(i = 0; i < jumlahElement; i++){
+                document.getElementsByTagName("li")[i].style.color="blue"
+                document.getElementsByTagName("li")[i].style.backgroundColor="red"
+            }
+
+            // cara manggilnya sama kaya css
+            // document.querySelector("#content").innerText="Updatettetette";
+            // document.querySelector("section").innerText="UpToDate";
+
+            document.querySelectorAll("h2")[0].innerText="UPPPTOOODATtettettete";
+    </script>
+</body>
+</html>
