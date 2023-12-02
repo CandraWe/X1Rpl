@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Soal 1: Pembuatan Elemen Baru</title>
+</head>
+<body>
+  <!-- Sabtu 02 Desember 2023 -->
+  
+  <button onclick="rubah()" id="tombolSoal1">Buat Elemen Baru</button>
+  <div id="disini"></div>
+
+  <script>
+
+    function rubah(){
+        var haha = document.getElementById("disini")
+        
+        var well = document.createElement("p");
+        haha.appendChild(well)
+        well.innerText = "terus"
+    }
+
+  </script>
+</body>
+</html>
