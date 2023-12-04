@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Soal 3: Manipulasi Kelas</title>
+  <style>
+    .ditekan {
+    
+      background-color: red;
+      color: white;
+      /* Gaya lain saat kelas 'ditekan' ditambahkan */
+    } 
+  </style>
+</head>
+<body>
+    <h1 id="teks">
+        Gatauuu
+    </h1>
+  <button onclick="tekan()" id="tombolSoal3">TAMBAHIN DOSA</button>
+
+  <script>
+     // buat kode javascript nya disini
+
+     function tekan() {
+        var kata = document.getElementById("teks");
+        kata.classList.add('ditekan');
+     }
+
+  </script>
+</body>
+</html>

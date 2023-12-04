@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Soal 2: Manipulasi Atribut</title>
+</head>
+<style>
+  body{
+    text-align: center;
+  }
+  img{
+    width :550px;
+  }
+  .ditekan {
+    
+    background-color: red;
+    color: white;
+    /* Gaya lain saat kelas 'ditekan' ditambahkan */
+  } 
+</style>
+<body>
+<!-- Sabtu 02 Desember 2023 -->
+  <h1 id="teks">
+    GATAUUUUUUUUUU
+  </h1>
+
+  <div id="disini"></div>
+
+  <img id="gambarID" src="https://dibimbing-cdn.sgp1.cdn.digitaloceanspaces.com/1666065647668-image%20(10).png.webp" alt="Gambar">
+  <br>
+  <button onclick="tambah()" id="tombolSoal1">Buat Elemen Baru</button>
+  <button onClick="rubah()" id="tombolSoal2">Ganti Gambar</button>
+  <button onclick="tekan()" id="tombolSoal3">TAMBAHIN DOSA</button> 
+
+  <script>
+      // Tambahkan kode JavaScript untuk mengubah atribut src dari gambar di sini
+    function tambah(){ //soal1
+      var nambah = document.getElementById("disini")
+      var well = document.createElement("p");
+
+      nambah.appendChild(well)
+      well.innerText = "terus"
+    }
+
+    function rubah() { //soal2
+      var lah = document.getElementById("gambarID")
+      lah.src="https://ichef.bbci.co.uk/news/800/cpsprodpb/8991/production/_104871253_1a76b03a-0a86-4ee3-85de-46f66d7f179e.jpg"   
+    }
+
+    function tekan() { //soal3
+        var kata = document.getElementById("teks");
+        kata.classList.add('ditekan');
+     }
+
+  </script>
+</body>
+</html>
