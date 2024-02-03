@@ -1,282 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
-        .layout{
-            padding: 10px;
-            font-family: arial;
-
-        }
-        header{
-            padding: 10px;
-            background-color: black;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            font-size: 20px;
-            align-items: center;
-        }
-        .button{
-            display: flex;
-            align-items: center;
-        }
-        button{
-            font-size: 25px;
-            color: white;
-            border-radius: 5px;
-        }
-        #button1{
-            border:solid 1px white;
-            background-color: black;
-        }
-        #button2{
-            background-color: blue;
-        }
-        .tombol{
-            text-decoration: none;
-            color: white;
-        }
-        .tombol:hover{
-            text-decoration: underline;
-            color: blue;
-        }
-        #isi{
-            padding-top: 30px;
-            background-color: #dadbf1;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            font-size: 28px;
-        }
-        main{
-            background-color: #dadbf1;
-            width: 100%;
-            height: 150px;
-            display: flex;
-            justify-content: center;
-        }
-        input{
-            width: 500px;
-            height: 50px;
-        }
-        .ISI{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .kotak{
-            /* background-color: red; */
-            width: 420px;
-            height: 250px;
-            margin: 30px;
-        }
-        .Logointinya{
-            float: left;
-            width: 80px;
-            /* margin: auto; */
-            padding: 10px;
-        }
-        #text{
-            margin-left: 150px;
-        }
-        footer{
-            background-color: black;
-            width: 100%;
-            height: 300px;
-            padding: 25px;
-            display: flex;
-        }
-        .coloring{
-            color: white;
-            margin-left: 40px;
-        }
-
-        .coloring a{
-            text-decoration: none;
-            color: white;
-        }
-        .coloring1{
-            color: white;
-            margin-left: 250px;
-            margin-top: 200px;
-        }
-        
-        /* 09|10|2023  */
-        /* untuk ukuran hp */
-        /* @media(max-width:500px){
-            button{
-                display: none;
-            }
-        } */
-        @media(max-width:500px){
-            h1{
-                display: none;
-            }
-        }
-        @media(max-width:500px){
-            input{
-                width: auto;
-            }
-        }
-        @media(max-width:800px){
-            .gambar{
-                display: none;
-            }
-        }
-        @media(max-width:600px){
-            .gambar{
-                display: block;
-            }
-            button{
-                display: none;
-            }
-        }
-        .gambar{
-            width: 50px;
+        .btn-primary{
+            background-color: green;
         }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+        <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <!-- ini semua css mya dari bootstrep -->
+    <!-- Jika ingin dirubah maka kasih style saja -->
+    <button type="button" class="btn btn-primary">Kirim</button>
+    <button type="button" class="btn btn-secondary">Kirim</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
     
-    <!-- Sabtu 30 September 2023 -->
-
-    <div class="layout">
-        <header>
-            <div>
-                <a class="tombol" href="#"> Abstract</a>
-                <a class="tombol" href="#"> Help Center</a>
-            </div>
-
-            <div class="button">
-                <button id="button1"> Submit a request</button>
-                <button id="button2"> Sign in</button>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqmJbZjsWoGz2uyB2qOKDFEQkcnE6uWp9Y-w&usqp=CAU" alt="" width="80px" class="gambar">
-            </div>
-        </header>
-
-        <div id="isi">
-            <h1>How can we help?</h1>
-        </div>
-
-        <main>
-            <div class="input">
-                <input type="text" placeholder="Search">
-            </div>
-        </main>
-
-        <div class="ISI">
-
-            <div class="kotak">
-                <div class="logo1">
-                    <img src="https://theme.zdassets.com/theme_assets/2197739/aed6500f4da41c641f3de5d96247eb6654e9c386.png" alt="" class="Logointinya">
-                </div>
-                <div id="text">
-                    <h3>Branches</h3>
-                    <p>Abstract Branches lets you manage, version, and document your designs in one place.</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </div>
-
-            <div class="kotak">
-                <div class="logo2">
-                    <img src="https://theme.zdassets.com/theme_assets/2197739/91588b3d042df901d9b941ccbb57af4f151401c7.png" alt="" class="Logointinya">
-                </div>
-                <div id="text">
-                    <h3>Manage your account</h3>
-                    <p>Configure your account settings, such as your email, profile details, and password.</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </div>
-
-            <div class="kotak">
-                <div class="logo3">
-                    <img src="https://theme.zdassets.com/theme_assets/2197739/50d0db451c0e1e66e1caddd142986fcf6792ca05.png" alt="" class="Logointinya">
-                </div>
-                <div id="text">
-                    <h3>Manage organizations, teams, and projects </h3>
-                    <p>Use Abstract organizations, teams, and projects to organize your people and your work.</p>
-                    <a href="#">Learn more </a>
-                </div>
-            </div>
-
-            <div class="kotak">
-                <div class="logo4">
-                    <img src="https://theme.zdassets.com/theme_assets/2197739/3e82d0126e97d7b7c60a611d4e11b3c278d33743.png" alt="" class="Logointinya">
-                </div>
-                <div id="text">
-                    <h3>Manage billing</h3>
-                    <p>Change subscriptions and payment details.</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </div>
-            <div class="kotak">
-                <div class="logo5">
-                    <img src="https://theme.zdassets.com/theme_assets/2197739/7712592465ef5c7bf18f1c7cb16e19ab44eb81e3.png" alt="" class="Logointinya">
-                </div>
-                <div id="text">
-                    <h3>Authenticate to Abstract</h3>
-                    <p>Set up and configure SSO, SCIM, and Just-in-Time provisioning.</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </div>
-            <div class="kotak">
-                <div class="logo6">
-                    <img src="https://theme.zdassets.com/theme_assets/2197739/dcc25d18e224d12621d74e545cc8bdd1b5685ca8.png" alt="" class="Logointinya">
-                </div>
-                <div id="text">
-                    <h3>Abstract support</h3>
-                    <p>Get in touch with a human.</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </div>
-
-            <footer>
-                <div class="coloring">
-                    <h1>Abstrak</h1>
-                    <a href="">Start Trial</a> <br>
-                    <a href="">Pricing</a><br>
-                    <a href="">Download</a>
-                </div>
-                <div class="coloring">
-                    <h1>Resources</h1>
-                    <a href="">Blog</a> <br>
-                    <a href="">Help Center</a><br>
-                    <a href="">Release Notes</a> <br>
-                    <a href="">Status</a> <br>
-                </div>
-                <div class="coloring">
-                    <h1>Community</h1>
-                    <a href="">Twiter</a> <br>
-                    <a href="">Linkendln</a><br>
-                    <a href="">Facebook</a> <br>
-                    <a href="">Dribbble</a> <br>
-                    <a href="">Podcast</a> <br>
-                </div>
-                <div class="coloring">
-                    <h1>Company</h1>
-                    <a href="">About us</a> <br>
-                    <a href="">Careers</a><br>
-                    <a href="">Legal</a> <br>
-                    
-                    <br>
-                    <p>Contact us</p>
-                    <p>info@abstrak.com</p>
-                </div>
-                <div class="coloring1">
-                    <P>
-                    © Copyright 2023<br>
-                    Abstract Studio Design, Inc.<br>
-                    All rights reserved
-                    </P>
-                </div>
-            </footer>
-        </div>
-        
-
-    </div>
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
 </html>
