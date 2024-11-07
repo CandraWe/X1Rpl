@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK-yabpIg85Al9mhbWi7Kizk8WE0kon1VlXCaVSzXTYzAoDz8_XW_2-3Ug03OX9L0e5W0&usqp=CAU);
+        }
+    </style>
+</head>
+<body>
+    <script>
+        //Kamis,31 November 2022
+        function Sapa_orang(Text1, Text2)
+        {
+            //document.write("Haloo " + Text1," Nilai Kamu " + Text2 +"<br>")
+            document.write(`Halo ${Text1}` , `Nilai Kamu ${80}` +"<br>");
+        }
+
+        Sapa_orang("Ilham, ", 80);
+
+        //
+
+        function Penjumlahan(angka1, angka2, angka3)
+        {
+            var Jumlah = angka1+ angka2 + angka3;
+            document.write("Hasil Penjumlahan Adalah : " + Jumlah +"<br>")
+        }
+        Penjumlahan(10, 20, 20);
+
+        //
+
+        function Bandingkan(Nilai1, Nilai2)
+        {
+            /*document.write(Nilai1 + " Lebih Besar dari " + Nilai2 +"<br>")
+            document.write(Nilai2 + " Lebih kecil dari " + Nilai1)*/
+
+        if (Nilai1 < Nilai2){
+            document.write("Nilai1 Lebih besar dari Nilai2");
+        }else{
+            document.write("Nilai2 Lebih kecil dari Nilai1");
+        }
+
+            document.write("<br>");
+        }
+
+        Bandingkan(80, 10)
+
+
+
+        //Senin,07 November 2022
+
+        function main(Benda1 , Benda2){    //Menggunakan operator perbandingan dan logika
+            if(Benda1 =="Batu" && Benda2 =="Gunting"){
+                document.write("Anda Menang");
+            }else(document.write("Anda Kalah"))
+        }
+        main("Gunting", "Batu")
+
+
+        //main(prompt("Batu atau Gunting"), prompt("Batu atau Gunting"));//anda menang
+        //main("Batu", "Kertas");//anda kalah
+        //main("Batu", "Batu");//anda seri
+
+
+
+    </script>
+</body>
+</html>
